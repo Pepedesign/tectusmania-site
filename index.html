@@ -1,167 +1,367 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tectusmania</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TECTUSMANIA – Decoração de Interiores, Lda | Pladur, Tectos Falsos, Divisórias</title>
+  <meta name="description" content="TECTUSMANIA – 18 anos de experiência (desde 2007) em pladur, tectos falsos, divisórias, pinturas e acabamentos interiores. Portugal, Ilhas e Europa." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1.0" />
 </head>
 
 <body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="chip">Desde 2007</span>
+        <span class="topbar__sep">•</span>
+        <span class="topbar__text">Portugal Continental • Açores e Madeira • Europa (sob projeto)</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="tel:256782101">256 782 101</a>
+        <span class="topbar__sep">•</span>
+        <a class="topbar__link" href="mailto:tectusmania@gmail.com">tectusmania@gmail.com</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo-container">
-            <img src="logo-tectusmania.png" alt="Tectusmania Logo" class="logo">
+  <!-- Header -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#topo" aria-label="TECTUSMANIA - Página inicial">
+        <img class="brand__logo" src="logo-tectusmania.png" alt="TECTUSMANIA – Logótipo" />
+        <div class="brand__text">
+          <span class="brand__name">TECTUSMANIA</span>
+          <span class="brand__tag">Decoração de Interiores, Lda</span>
+        </div>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#contactos">Contactos</a>
+        <a class="btn btn--primary" href="#contactos">Pedir Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero__bg" role="img" aria-label="Trabalho interior em pladur e acabamentos"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__kicker">
+            <span class="dot"></span>
+            <span>Especialistas em Pladur • Tectos Falsos • Divisórias</span>
+          </div>
+
+          <h1>Execução técnica de pladur e acabamentos interiores com rigor profissional.</h1>
+          <p class="hero__sub">
+            18 anos de experiência (fundada a 11/09/2007). Atuação em Portugal Continental, Açores e Madeira, e Europa mediante planeamento.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contactos">Pedir Orçamento</a>
+            <a class="btn btn--ghost" href="#trabalhos">Ver Trabalhos</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust">
+              <span class="trust__num">18+</span>
+              <span class="trust__label">anos de experiência</span>
+            </div>
+            <div class="trust">
+              <span class="trust__num">2007</span>
+              <span class="trust__label">fundação</span>
+            </div>
+            <div class="trust">
+              <span class="trust__num">Rigor</span>
+              <span class="trust__label">qualidade & prazos</span>
+            </div>
+          </div>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#area-atuacao">Área de atuação</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contactos">Contactos</a></li>
-                <li><a href="#orcamento">Orçamento</a></li>
+        <aside class="hero__card" aria-label="Destaques">
+          <h2>Foco principal</h2>
+          <ul class="checklist">
+            <li>Tectos falsos em pladur com acabamento limpo</li>
+            <li>Divisórias em gesso cartonado (pladur)</li>
+            <li>Pinturas interiores e revestimentos</li>
+            <li>Acabamentos e soluções por medida</li>
+          </ul>
+
+          <div class="hero__cardActions">
+            <a class="btn btn--dark" href="tel:256782101">Ligar agora</a>
+            <a class="btn btn--light" href="mailto:tectusmania@gmail.com?subject=Pedido%20de%20Or%C3%A7amento%20-%20TECTUSMANIA">Enviar email</a>
+          </div>
+
+          <p class="small">
+            <strong>Zona:</strong> Portugal • Ilhas • Europa (sob projeto).
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services highlights -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__header">
+          <h2>Serviços</h2>
+          <p>Execução orientada a qualidade, rigor técnico e acabamento final — para particulares, empresas, construtoras e remodelações.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Tectos falsos em pladur</h3>
+            <p>Soluções técnicas para tetos nivelados, sancas, iluminação e integração de infraestruturas, com acabamento uniforme.</p>
+            <span class="pill">Especialidade</span>
+          </article>
+
+          <article class="card">
+            <h3>Divisórias em gesso cartonado</h3>
+            <p>Divisão de espaços com estrutura adequada, isolamento (quando necessário) e finalização pronta a pintar.</p>
+            <span class="pill">Pladur</span>
+          </article>
+
+          <article class="card">
+            <h3>Pinturas interiores</h3>
+            <p>Preparação de superfícies e pintura com foco em durabilidade, cobertura e limpeza de execução.</p>
+            <span class="pill">Acabamento</span>
+          </article>
+
+          <article class="card">
+            <h3>Revestimentos e acabamentos</h3>
+            <p>Revestimento de pavimentos e paredes, regularização e detalhes finais para um resultado moderno e consistente.</p>
+            <span class="pill">Detalhe</span>
+          </article>
+
+          <article class="card">
+            <h3>Carpintaria e caixilharia</h3>
+            <p>Trabalhos complementares para interiores: ajustes, aplicações e soluções funcionais por medida.</p>
+            <span class="pill">Complementar</span>
+          </article>
+
+          <article class="card">
+            <h3>Materiais de construção civil</h3>
+            <p>Comércio de materiais para apoio a obras e intervenções, com seleção orientada à aplicação.</p>
+            <span class="pill">Materiais</span>
+          </article>
+        </div>
+
+        <div class="ctaBanner">
+          <div class="ctaBanner__text">
+            <h3>Precisas de orçamento rápido e claro?</h3>
+            <p>Envia a localização, tipo de obra e prazos. Respondemos com proposta objetiva.</p>
+          </div>
+          <a class="btn btn--primary" href="#contactos">Pedir Orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="sobre">
+      <div class="container split">
+        <div>
+          <header class="section__header section__header--left">
+            <h2>Sobre a empresa</h2>
+            <p>TECTUSMANIA – Decoração de Interiores, Lda é uma sociedade por quotas com 18 anos de experiência, fundada em 11/09/2007.</p>
+          </header>
+
+          <div class="about">
+            <p>
+              Atuamos com foco técnico em pladur (tectos falsos e divisórias), pinturas e acabamentos interiores,
+              garantindo execução cuidada, cumprimento de prazos e uma entrega final limpa e profissional.
+            </p>
+            <ul class="bullets">
+              <li><strong>Experiência:</strong> desde 2007</li>
+              <li><strong>Clientes:</strong> particulares, empresas e construtoras</li>
+              <li><strong>Zona:</strong> Portugal Continental, Açores e Madeira, e Europa (sob projeto)</li>
             </ul>
-        </nav>
-    </header>
 
-    <!-- HERO COM IMAGEM DE FUNDO -->
-    <section class="hero hero-bg">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>18 Anos de Experiência em Pladur, Tetos Falsos e Interiores Técnicos</h1>
-                <p class="selo-experiencia">Desde 2007 — 18 anos a transformar interiores</p>
-                <p>Execução rigorosa, acabamentos perfeitos e confiança comprovada em Portugal e Europa.</p>
-                <a href="#orcamento" class="btn-hero">Pedir Orçamento</a>
+            <div class="facts">
+              <div class="fact"><span class="fact__k">NIF</span><span class="fact__v">508 354 080</span></div>
+              <div class="fact"><span class="fact__k">Sede</span><span class="fact__v">Válega, Ovar – Aveiro</span></div>
+              <div class="fact"><span class="fact__k">Contacto</span><span class="fact__v"><a href="tel:256782101">256 782 101</a></span></div>
             </div>
+          </div>
         </div>
+
+        <div class="panel">
+          <h3>Compromissos</h3>
+          <ul class="checklist checklist--compact">
+            <li>Rigor técnico e acabamento final</li>
+            <li>Organização e limpeza em obra</li>
+            <li>Cumprimento de prazos acordados</li>
+            <li>Comunicação simples e objetiva</li>
+          </ul>
+
+          <div class="note">
+            <strong>Importante:</strong> Trabalhos na Europa mediante projeto e planeamento prévio.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="sobre">
-        <h2>Sobre a Tectusmania</h2>
-        <p>
-            Com 18 anos de experiência em obra, a Tectusmania nasceu da prática, da exigência e da precisão.
-            Somos especialistas em pladur, tetos falsos e soluções técnicas de interiores, sempre com foco em detalhe,
-            alinhamento e acabamento final.
+    <!-- Gallery -->
+    <section class="section" id="trabalhos">
+      <div class="container">
+        <header class="section__header">
+          <h2>Trabalhos</h2>
+          <p>Alguns exemplos de resultados finais. Foco em ambientes limpos, modernos e acabamentos consistentes.</p>
+        </header>
+
+        <div class="gallery" aria-label="Galeria de trabalhos">
+          <figure class="gallery__item"><img src="pronto-1.jpg" alt="Trabalho em pladur - exemplo 1" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-2.jpg" alt="Trabalho em pladur - exemplo 2" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-3.jpg" alt="Trabalho em pladur - exemplo 3" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-4.jpg" alt="Trabalho em pladur - exemplo 4" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-5.jpg" alt="Trabalho em pladur - exemplo 5" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-6.jpg" alt="Trabalho em pladur - exemplo 6" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-7.jpg" alt="Trabalho em pladur - exemplo 7" loading="lazy"></figure>
+          <figure class="gallery__item"><img src="pronto-8.jpg" alt="Trabalho em pladur - exemplo 8" loading="lazy"></figure>
+        </div>
+
+        <p class="small center">
+          Queres ver mais exemplos? <a href="#contactos">Pede uma proposta</a> e partilha o tipo de obra.
         </p>
-        <p>
-            Cada projeto é pensado como um todo: desde a estrutura até ao último corte, garantindo superfícies limpas,
-            linhas direitas e integração com iluminação, climatização e restantes especialidades.
-        </p>
-        <p>
-            Atuamos em Portugal Continental, Ilhas e Europa, com uma abordagem organizada, comunicação clara e acompanhamento direto em obra.
-        </p>
+      </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="servicos">
-        <h2>Serviços <span class="anos">(18 anos de experiência)</span></h2>
+    <!-- Contact -->
+    <section class="section section--alt" id="contactos">
+      <div class="container split">
+        <div>
+          <header class="section__header section__header--left">
+            <h2>Contactos</h2>
+            <p>Entra em contacto para orçamento. Resposta objetiva com base nas informações do projeto.</p>
+          </header>
 
-        <div class="servicos-grid">
-            <div class="servico-card">Pladur e divisórias técnicas</div>
-            <div class="servico-card">Tetos falsos</div>
-            <div class="servico-card">Isolamentos acústicos e térmicos</div>
-            <div class="servico-card">Estruturas metálicas</div>
-            <div class="servico-card">Acabamentos e remodelações interiores</div>
-        </div>
-    </section>
-
-    <!-- ÁREA DE ATUAÇÃO -->
-    <section id="area-atuacao" class="area-atuacao">
-        <h2>Área de atuação</h2>
-
-        <div class="area-grid">
-            <div class="area-card">
-                <h3>Portugal Continental</h3>
-                <p>Obras novas e remodelações com foco em pladur, tetos falsos e interiores técnicos.</p>
+          <div class="contactCards">
+            <div class="contactCard">
+              <h3>Morada</h3>
+              <p>Rua Capela do Outeiro, nº 287<br>3880-408 Válega<br>Ovar – Aveiro</p>
             </div>
 
-            <div class="area-card">
-                <h3>Ilhas</h3>
-                <p>Projetos planeados ao detalhe, com deslocações organizadas e equipas preparadas.</p>
+            <div class="contactCard">
+              <h3>Telefone</h3>
+              <p><a href="tel:256782101">256 782 101</a><br><span class="muted">Chamada para a rede fixa nacional</span></p>
             </div>
 
-            <div class="area-card">
-                <h3>Europa</h3>
-                <p>Intervenções internacionais com foco em qualidade, prazos e comunicação clara.</p>
+            <div class="contactCard">
+              <h3>Email</h3>
+              <p><a href="mailto:tectusmania@gmail.com">tectusmania@gmail.com</a></p>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- GALERIA -->
-    <section id="galeria" class="galeria">
-        <h2>Galeria de Trabalhos</h2>
-
-        <div class="gallery-grid">
-            <img src="imagens/pronto1.jpg" alt="">
-            <img src="imagens/pronto2.jpg" alt="">
-            <img src="imagens/pronto3.jpg" alt="">
-            <img src="imagens/pronto4.jpg" alt="">
-            <img src="imagens/pronto5.jpg" alt="">
-            <img src="imagens/pronto6.jpg" alt="">
-            <img src="imagens/pronto7.jpg" alt="">
-            <img src="imagens/pronto8.jpeg" alt="">
-        </div>
-    </section>
-
-    <!-- ORÇAMENTO -->
-    <section id="orcamento" class="orcamento">
-        <h2>Pedir Orçamento</h2>
-
-        <form class="form-orcamento">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Local da obra" required>
-            <textarea placeholder="Descreva o trabalho pretendido" required></textarea>
-            <button type="submit">Enviar Pedido</button>
-        </form>
-    </section>
-
-    <!-- CONTACTOS -->
-    <section id="contactos" class="contactos">
-        <h2>Contactos & Localização</h2>
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-                <h3>Email</h3>
-                <p>tectusmania@gmail.com</p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Telefone</h3>
-                <p>913 000 000</p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Localização</h3>
-                <p>Portugal Continental, Ilhas e Europa</p>
-            </div>
-
-            <div class="contact-card">
-                <h3>WhatsApp</h3>
-                <p><a href="https://wa.me/351913000000" target="_blank">Enviar mensagem</a></p>
-            </div>
-
-        </div>
-
-        <h3 class="map-title">Localização</h3>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111!2d-8.55!3d40.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNDDCsDU0JzAwLjAiTiA4wrAzMycwMC4wIlc!5e0!3m2!1spt-PT!2spt!4v0000000000"
-                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+          <div class="map">
+            <!-- Substitui o src por um embed do Google Maps se quiseres exato.
+                 Dica: no Google Maps > Partilhar > Incorporar um mapa > copiar iframe. -->
+            <iframe
+              title="Mapa - TECTUSMANIA"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Rua%20Capela%20do%20Outeiro%20287%203880-408%20V%C3%A1lega&output=embed">
             </iframe>
+          </div>
         </div>
 
+        <div class="panel">
+          <h3>Formulário de pedido de orçamento</h3>
+          <form class="form" action="mailto:tectusmania@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Nome
+              <input name="Nome" type="text" placeholder="O seu nome" required>
+            </label>
+
+            <label>
+              Telefone
+              <input name="Telefone" type="tel" placeholder="Ex.: 9xx xxx xxx" required>
+            </label>
+
+            <label>
+              Email
+              <input name="Email" type="email" placeholder="O seu email" required>
+            </label>
+
+            <label>
+              Tipo de serviço
+              <select name="Servico" required>
+                <option value="" disabled selected>Selecionar…</option>
+                <option>Tectos falsos em pladur</option>
+                <option>Divisórias em gesso cartonado</option>
+                <option>Pinturas interiores</option>
+                <option>Revestimentos e acabamentos</option>
+                <option>Carpintaria e caixilharia</option>
+                <option>Materiais de construção</option>
+              </select>
+            </label>
+
+            <label>
+              Mensagem
+              <textarea name="Mensagem" rows="5" placeholder="Localização, metragem aproximada, prazo e detalhes do trabalho…" required></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit">Enviar pedido</button>
+
+            <p class="small muted">
+              Nota: em sites estáticos o formulário via <strong>mailto</strong> abre o teu programa de email.
+              Se quiseres envio automático sem abrir email, diz-me e eu meto versão com Formspree/Netlify Forms.
+            </p>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Tectusmania © 2025 — 18 anos de experiência em interiores técnicos</p>
-    </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="footer__brand">TECTUSMANIA – Decoração de Interiores, Lda</div>
+          <div class="footer__meta">NIF 508 354 080 • Fundada em 11/09/2007</div>
+        </div>
 
+        <div class="footer__links">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#trabalhos">Trabalhos</a>
+          <a href="#contactos">Contactos</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> TECTUSMANIA. Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile menu
+    const toggle = document.querySelector('.nav__toggle');
+    const nav = document.querySelector('.nav');
+    toggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav--open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Close menu on click
+    document.querySelectorAll('.nav a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('nav--open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
