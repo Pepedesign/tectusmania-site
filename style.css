@@ -25,7 +25,7 @@ header {
 
 /* LOGO */
 .logo {
-    height: 75px;
+    height: 85px;
     width: auto;
     object-fit: contain;
     margin-top: 5px;
@@ -50,29 +50,43 @@ nav a:hover {
     color: #004aad;
 }
 
-/* HERO */
-.hero {
-    padding: 120px 20px;
-    text-align: center;
-    background: linear-gradient(to bottom, #eaf2ff, #ffffff);
+/* HERO COM IMAGEM DE FUNDO */
+.hero-bg {
+    background-image: url("imagens/interior.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* SOBREPOSIÇÃO */
+.hero-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* TEXTO DO HERO */
 .hero-content h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: #004aad;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .selo-experiencia {
-    margin-top: -5px;
-    margin-bottom: 15px;
     font-size: 1rem;
     color: #003680;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     margin-bottom: 25px;
 }
