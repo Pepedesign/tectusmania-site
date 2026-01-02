@@ -6,9 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BASE */
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     line-height: 1.6;
 }
 
@@ -17,39 +18,49 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #111;
-    border-bottom: 1px solid #222;
+    padding: 22px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    height: 60px;
+    height: 75px;          /* tamanho proporcional */
     width: auto;
+    object-fit: contain;
     display: block;
+    margin-top: 5px;        /* alinhamento perfeito */
 }
 
+/* MENU */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #666;
 }
 
 /* HERO */
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .hero h1 {
@@ -59,7 +70,7 @@ nav a:hover {
 
 .hero p {
     font-size: 1.1rem;
-    color: #ccc;
+    color: #444;
 }
 
 /* SOBRE */
@@ -78,14 +89,14 @@ nav a:hover {
 .sobre p {
     margin-bottom: 15px;
     line-height: 1.7;
-    font-size: 0.98rem;
-    color: #ddd;
+    font-size: 1rem;
+    color: #333;
 }
 
 /* SERVIÇOS */
 .servicos {
     padding: 60px 40px;
-    background-color: #111;
+    background-color: #fff;
 }
 
 .servicos h2 {
@@ -102,14 +113,14 @@ nav a:hover {
 
 .servicos li {
     padding: 8px 0;
-    border-bottom: 1px solid #222;
-    color: #ccc;
+    border-bottom: 1px solid #ddd;
+    color: #444;
 }
 
 /* ÁREA DE ATUAÇÃO */
 .area-atuacao {
     padding: 60px 40px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .area-atuacao h2 {
@@ -125,8 +136,8 @@ nav a:hover {
 }
 
 .area-card {
-    background-color: #111;
-    border: 1px solid #222;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
 }
@@ -138,13 +149,13 @@ nav a:hover {
 
 .area-card p {
     font-size: 0.95rem;
-    color: #ccc;
+    color: #555;
 }
 
 /* GALERIA */
 .galeria {
     padding: 60px 40px;
-    background-color: #111;
+    background-color: #fff;
 }
 
 .galeria h2 {
@@ -164,13 +175,13 @@ nav a:hover {
     height: 220px;
     object-fit: cover;
     border-radius: 6px;
-    border: 1px solid #222;
+    border: 1px solid #ddd;
 }
 
 /* CONTACTOS */
 .contactos {
     padding: 60px 40px;
-    background-color: #000;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -181,15 +192,38 @@ nav a:hover {
 
 .contactos p {
     margin-bottom: 10px;
-    color: #ccc;
+    color: #444;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #111;
-    border-top: 1px solid #222;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
     color: #777;
 }
 
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo {
+        height: 70px;
+        margin-top: 0;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-grid img {
+        height: 180px;
+    }
+}
